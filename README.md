@@ -45,13 +45,13 @@ Além do botão de cadastrar, tem um botão de ver estoque e outro para limpar o
 
 #### Página Principal
 
-<img src="/assets/JPEG/telaInicial.jpg" height="150" width="auto" alt="opções para cadastrar">
+<img src="/assets/JPEG/telaInicial.jpg" height="350" width="auto" alt="opções para cadastrar">
 
 #### Página de cadastro de clientes
 
-<img src="/assets/JPEG/cadastroClientes.jpg" height="150" width="auto" alt="tela de cadastro de clientes">
+<img src="/assets/JPEG/cadastroClientes.jpg" height="350" width="auto" alt="tela de cadastro de clientes">
 
 #### Página de cadastro de produtos
 
-<img src="/assets/JPEG/cadastroProdutos.jpg" height="150" width="auto" alt="tela de cadastro de produtos">
+<img src="/assets/JPEG/cadastroProdutos.jpg" height="350" width="auto" alt="tela de cadastro de produtos">
 
