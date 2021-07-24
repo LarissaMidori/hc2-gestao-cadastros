@@ -30,7 +30,7 @@
                         <fieldset class="fieldset">
                             <label for="">Nome:</label>
                             <br>
-                            <input type="text" id="name" required>
+                            <input type="text" id="nome">
                             <br>
                             <label for="">E-mail:</label>
                             <br>
@@ -62,13 +62,14 @@
                             <input type="text" id="cep">
                         </fieldset>
                         <br>
-                        <button class="button" type="submit" id="cadastro">Cadastrar Usuário</button>
+                        <button class="button" type="submit" id="cadastro" onclick="validarCadastro('nome', 'email', 'rua', 'numero', 'bairro', 'cidade', 'uf', 'cep')">Cadastrar Usuário</button>
                     </form>  
                 </div>
             </div>
         </section>
     
     </div>
+
     <script src="/js/script.js"></script>
 </body>
 </html>
