@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Redressed&family=Roboto+Mono&family=Roboto:wght@400;500;700&family=Sansita:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Cadastro de Produtos</title>
+</head>
+<body onload="carregarEstoque('estoque')">
+
+    <div class="container">
+
+        <header>
+            <h1>Sistema de Cadastros de Produtos</h1>
+        </header>
+    
+        <section id="form">
+                <div class="carrinho">
+                    <img src="/assets/JPEG/carrinho.png" alt="carrinho" />
+                    <p>Itens no estoque: <span id="estoque">0</span></p>
+                </div>
+                <div class="cadastro-produto">
+                    <form id="form-produto">
+                        
+                        <fieldset>
+                            <label for="nome-produto">Nome do Produto:</label>
+                            <input type="text" name="nome-produto" id="nomeProd">
+                            <label for="cod-produto">Código do Produto:</label>
+                            <input type="text" name="cod-produto" id="codProd">
+                            <label for="qtde-produto">Quantidade do Produto:</label>
+                            <select name="qtde-produto" id="qtdeProd">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </fieldset>
+
+                        <div class="buttons">
+                            <input class="button" type="button" value="Cadastrar" onclick="validarProduto('nomeProd', 'codProd', 'qtdeProd')">
+                            <input id="btn-meio" class="button" type="button" value="Ver estoque" onclick="window.open('estoque.html', '_self')">
+                            <input class="button" type="reset" value="Limpar">
+                        </div>
+
+                    </form>  
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="/js/produtos.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

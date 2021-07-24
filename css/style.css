@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-style: none;
+}
+
+a:link, a:visited, a:active  {
+    text-decoration: none;
+    color: #fff;
+} 
+
+html {
+    /* O normal é 1rem = 16px (User Agent) = 100% (User Agent)  ----> O padrão passa a ser 10px que fica 1rem quando mudamos o font-size para 62.5% */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* ===== container =====*/
+
+.container {
+    background: #F4F2E7;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #35293f;
+}
+
+/* ===== header =====*/
+
+header {
+    height: 5%;
+    background: rgb(79, 40, 131);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+}
+
+/* ===== GERAL - div-form ===== */
+
+#form {
+    height: 95%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DDD3F3;
+    margin: auto;
+}
+
+#form button, #form .button {
+    background: #707cce;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    font-size: 2.4rem;
+    border-radius: 1.5rem;
+    padding: 2rem 4rem;
+}
+
+#form button:hover, #form .button:hover {
+    background: rgb(79, 40, 131);
+    color: rgb(255, 255, 255);
+}
+
+#form input {
+    text-align: center;
+}
+
+/* =====TELA SELEÇÃO DE CADASTRO  ===== */
+
+#form-index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto 6rem;
+}
+
+#form-index button{
+    margin: 0 10rem;
+}
+
+/* ===== CADASTRO CLIENTES ===== */
+
+#form .cadastro-cliente {
+    font-size: 1.8rem;
+    margin: auto 2rem;
+}
+
+#form #form-cliente {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form #form-cliente input {
+        width: 40rem;
+        height: 3rem;
+        border-radius: 1rem;
+        outline: none;
+        margin: 1rem;
+}
+
+#form #form-cliente label {
+    margin: 1rem;
+}
+
+#form #form-cliente button {
+    width: 30rem;
+    height: 6rem;
+    font-size: 2.4rem;
+}
+
+
+/* ===== CADASTRO PRODUTOS ===== */
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form .carrinho {
+    margin-top: 2rem;
+}
+#form .cadastro-produto {
+    font-size: 1.8rem;
+    margin: auto 2rem;
+}
+
+#form #form-produto {
+    margin-top: 1rem;
+}
+
+#form #form-produto input {
+        width: 40rem;
+        height: 3rem;
+        border-radius: 1rem;
+        outline: none;
+        margin: 1rem;
+}
+
+#form #form-produto label {
+    margin: 1rem;
+}
+
+#form #form-produto .buttons {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+#form #form-produto .button {
+    width: 25rem;
+    height: 6rem;
+    font-size: 2.4rem;
+}
+
+#form #form-produto .button#btn-meio {
+    margin: 0 10rem;
+}
+
+/* ===== Media Queries ===== */
+
+ @media (max-width: 1280px) {
+    #form {
+        height: 100vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    #form-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto 6rem;
+    }
+
+    #form-index button {
+        margin: 2rem;
+    }
+    
+}
+
+ @media (max-width: 991px) {
+    #form {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #form #form-produto .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    #form-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto 6rem;
+    }
+
+    #form-index button {
+        margin: 2rem;
+    }
+    
+}
+ @media (max-width: 768px) {
+    #form {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    #form #form-produto .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    #form-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto 6rem;
+    }
+
+    #form-index button {
+        margin: 2rem;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #form {
+        height: 100vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #form #form-produto .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    
+    #form-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+    }
+
+    #form-index button {
+        margin: 2rem;
+    }
+    
+} 
+
